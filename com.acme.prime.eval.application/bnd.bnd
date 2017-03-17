@@ -1,0 +1,22 @@
+#
+#  APPLICATION
+#
+
+Bundle-Version: 1.0.0.${tstamp}
+Bundle-Description: This is the eval application bundle. 
+
+Private-Package:  \
+	com.acme.prime.eval.application
+
+EnRoute-Application: 	com.acme.prime.eval
+JPM-Command:			eval
+
+-includeresource: \
+	{readme.md}
+
+-buildpath: \
+	osgi.enroute.base.api,\
+	com.acme.prime.eval.api;version=latest
+	
+-testpath: \
+	osgi.enroute.junit.wrapper;version=4.12
