@@ -10,7 +10,7 @@ import osgi.enroute.debug.api.Debug;
 @Component(
 	service=EvalApplication.class, 
 	property = { 
-		Debug.COMMAND_SCOPE + "=eval",
+		Debug.COMMAND_SCOPE + "=test",
 		Debug.COMMAND_FUNCTION + "=eval" 
 	}
 )
